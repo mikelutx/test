@@ -5,7 +5,7 @@ Table of Contents
 * [Installation](#install)
     * [Prerequisites](#pre)
     * [Installing from Package Manager Console](#pmc)
-    * [Building From Source](#obtaining)
+    * [Building From Source](#obtain)
 * [Feature List](#feature)
 * [Sample Codes](#sample)
 * [Related Information](#information)
