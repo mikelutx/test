@@ -82,7 +82,7 @@ The features supported by this SDK include:
 using enos_subscription.client;
 
 DataClient client = new DataClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
- client.subscribe("Your subscription Id");
+client.subscribe("Your subscription Id");
 
 foreach (var message in client.GetMessages())
 {
@@ -96,7 +96,7 @@ foreach (var message in client.GetMessages())
 using enos_subscription.client;
 
 AlertClient client = new AlertClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
- client.subscribe("Your subscription Id");
+client.subscribe("Your subscription Id");
 
 foreach (var message in client.GetMessages())
 {
@@ -110,7 +110,7 @@ foreach (var message in client.GetMessages())
 using enos_subscription.client;
 
 OfflineClient client = new OfflineClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
- client.subscribe("Your subscription Id");
+client.subscribe("Your subscription Id");
 
 foreach (var message in client.GetMessages())
 {
