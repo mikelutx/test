@@ -12,7 +12,7 @@ Table of Contents
 * [Release Notes](#releasenotes)
 
 
-EnOS Data Subscription Service improves the API calling efficiency of applications with active data push, which supports subscription to real-time asset data, offline asset data, asset alert data, and asset event data.
+EnOS Data Subscription Service improves the API calling efficiency of applications with active data push, which supports subscription to real-time asset data, offline asset data, and asset alert data.
 
 After configuring and starting data subscription jobs on the EnOS Management Console, you can use the Data Subscription SDK for .NET to develop applications for consuming the subscribed data.
 
@@ -44,7 +44,7 @@ Install-Package enos-subscribe
 
 ### Building From Source
 
-1. Obtain the source code of Data Subscription SDK for Python.
+1. Obtain the source code of Data Subscription SDK for .NET.
    - From GitHub:
     ```
     git clone https://github.com/EnvisionIot/enos-subscription-service-sdk-dotnet.git
