@@ -69,7 +69,6 @@ The features supported by this SDK include:
 - Consuming subscribed real-time asset data
 - Consuming subscribed alert data
 - Consuming subscribed offline asset data
-- Consuming subscribed event data
 
 
 <a name="sample"></a>
