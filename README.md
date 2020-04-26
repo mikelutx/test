@@ -81,13 +81,13 @@ The features supported by this SDK include:
 ```csharp
 using enos_subscription.client;
 
-using(DataClient client = new DataClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription")){
-client.subscribe("Your subscription Id");
+using (DataClient client = new DataClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription")) {
+    client.subscribe("Your subscription Id");
 
-foreach (var message in client.GetMessages())
-{
-   //do something with the message
-}
+    foreach (var message in client.GetMessages())
+    {
+       //do something with the message
+    }
 }
 ```
 
