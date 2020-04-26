@@ -97,12 +97,14 @@ using (DataClient client = new DataClient("sub-host", "sub-port", "Your Access K
 ```csharp
 using enos_subscription.client;
 
-AlertClient client = new AlertClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
-client.subscribe("Your subscription Id");
+using (AlertClient client = new AlertClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription")) {    
+    
+    client.subscribe("Your subscription Id", "Your consumer group");
 
-foreach (var message in client.GetMessages())
-{
-   //do something with the message
+    foreach (var message in client.GetMessages())
+    {
+       //do something with the message
+    }
 }
 ```
 
@@ -111,12 +113,14 @@ foreach (var message in client.GetMessages())
 ```csharp
 using enos_subscription.client;
 
-OfflineClient client = new OfflineClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
-client.subscribe("Your subscription Id");
+using (OfflineClient client = new OfflineClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription")) {    
+    
+    client.subscribe("Your subscription Id", "Your consumer group");
 
-foreach (var message in client.GetMessages())
-{
-   //do something with the message
+    foreach (var message in client.GetMessages())
+    {
+       //do something with the message
+    }
 }
 ```
 
