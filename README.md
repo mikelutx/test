@@ -56,7 +56,8 @@ Install-Package enos-subscribe
 
 
 The EnOS Data Subscription SDK for .NET has the following dependency modules:
-- Google.ProtoBuf
+- [protobuf-net](https://github.com/protobuf-net/protobuf-net)
+- [NLog](https://github.com/NLog/NLog)
 
 
 <a name="feature"></a>
@@ -80,12 +81,13 @@ The features supported by this SDK include:
 ```csharp
 using enos_subscription.client;
 
-DataClient client = new DataClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription");
+using(DataClient client = new DataClient("sub-host", "sub-port", "Your Access Key of this subscription", "Your Access Secret of this subscription")){
 client.subscribe("Your subscription Id");
 
 foreach (var message in client.GetMessages())
 {
    //do something with the message
+}
 }
 ```
 
